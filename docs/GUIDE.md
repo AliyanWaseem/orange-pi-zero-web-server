@@ -22,8 +22,8 @@ This guide walks through everything needed to go from a blank Orange Pi Zero to 
 - A domain name you control (optional — you can skip Part 5 if you just want local/tunnel access)
 - A free Cloudflare account (only needed for Part 5)
 
-> 📸 *Screenshot suggestion: photo of the Orange Pi Zero board with pin header labeled, and the USB-TTL adapter connected*
-
+![Serial connection setup](images/orange-pi.jpeg)
+> 📸 *Serial connection*
 ---
 
 ## Part 1 — First Boot (No Display Required)
@@ -75,8 +75,6 @@ You'll immediately be forced to:
 2. Set a **new root password** (enter it twice)
 3. Create a **new regular user account** (username + password) — don't skip this step; operating permanently as root is bad practice
 
-> 📸 *Screenshot: terminal showing the login prompt and password-change flow*
-
 Once done, log out and log back in as your new user.
 
 ---
@@ -117,6 +115,7 @@ ssh yourusername@<ip-address>
 ```
 Accept the host key prompt (`yes`), then enter your password.
 
+![Serial connection setup](images/ssh-login.png)
 > 📸 *Screenshot: successful SSH login showing the Armbian welcome banner*
 
 ---
@@ -265,6 +264,7 @@ This part connects a real domain (e.g., `yourdomain.com` or a subdomain like `we
 3. Choose the **Free plan**
 4. Cloudflare scans your existing DNS records automatically
 
+![Serial connection setup](images/add-dns-record.png)
 > 📸 *Screenshot: Cloudflare "Add a site" DNS record scan results page*
 
 > ⚠️ **If you already use this domain for email or other services:** before continuing, go to your current DNS provider (e.g., cPanel's Zone Editor) and write down every existing record — especially **MX records** (these route your email). Compare this list against what Cloudflare auto-detected, and add anything missing manually before switching nameservers. This step prevents breaking your email.
