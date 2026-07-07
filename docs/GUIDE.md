@@ -333,6 +333,7 @@ Watch for `Registered tunnel connection` in the output — that confirms success
 
 Visit `https://web.yourdomain.com` in a browser — your site should now be live, publicly, with HTTPS.
 
+![Serial connection setup](images/web.png)
 > 📸 *Screenshot: browser showing the live site at the custom domain with a padlock icon*
 
 ---
