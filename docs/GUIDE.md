@@ -93,7 +93,7 @@ This opens a text menu:
 1. Select **"Activate a connection"**
 2. If your Wi-Fi network appears, select it and enter the password
 3. If it doesn't connect, back out and choose **"Edit a connection"** → create a new Wi-Fi connection manually, enter your SSID and WPA2 password, save
-
+![Serial connection setup](images/activate-connection.png)
 > 📸 *Screenshot: the blue nmtui menu with "Activate a connection" highlighted*
 
 ### Step 2: Find the board's IP address
@@ -190,7 +190,7 @@ From your laptop's browser (same network), visit:
 http://<board-ip-address>
 ```
 You should see the default "Welcome to nginx!" page.
-
+![Serial connection setup](images/nginx.png)
 > 📸 *Screenshot: default Nginx welcome page in a browser*
 
 ### Step 4: Deploy your own site
